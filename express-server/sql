@@ -1,0 +1,5 @@
+===SELECT TEAM NAMES FROM FIXTURES==============
+SELECT team1.name homeTeam, team2.name awayTeam, date, homeTeamGoals, awayTeamGoals
+FROM fixtures
+JOIN team team1 ON fixtures.homeTeamId = team1.id
+JOIN team team2 ON fixtures.awayTeamId = team2.id

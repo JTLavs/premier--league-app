@@ -1,0 +1,20 @@
+<div class="fixture card" *ngFor="let team of teams$ | async">
+  <div class="card-body">
+        <div class="team-block">
+          <span class="team-title">{{team.name}}</span>
+          <br>
+          <span class="team-subtitle">
+              <a href="#">Info</a>
+          </span>
+          <span class="team-subtitle">
+            <a href="#">Matches</a>
+          </span>
+          <span class="team-subtitle">
+              <a href="#">Players</a>
+            </span>
+        </div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/220px-Manchester_United_FC_crest.svg.png" 
+          style="display: inline;float:right;vertical-align: top" width="60px" height="60px">
+  </div>
+</div>
+
